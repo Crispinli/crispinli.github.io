@@ -26,7 +26,7 @@
 <meta property="og:image" content="https://crispinli.github.io/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/完备事件组.png">
 <meta property="og:image" content="https://crispinli.github.io/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/联合概率.png">
 <meta property="article:published_time" content="2022-07-29T07:09:31.000Z">
-<meta property="article:modified_time" content="2022-07-29T08:06:23.171Z">
+<meta property="article:modified_time" content="2022-07-29T08:50:13.346Z">
 <meta property="article:author" content="crispin">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -348,10 +348,9 @@
 <li><p>依据全概率公式，<strong>贝叶斯概率公式可改写为</strong>：$P(A_i|B)=\frac{P(B,A_i)}{P(B)}=\frac{P(B|A_i)P(A_i)}{P(B)}=\frac{P(B|A_i)P(A_i)}{\sum_{i=1}^nP(B,A_i)}=\frac{P(B|A_i)P(A_i)}{\sum_{i=1}^nP(B|A_i)P(A_i)}$</p>
 </li>
 <li><p>朴素贝叶斯算法的先天缺陷：其他属性携带的信息被训练集中某个分类下未出现的属性值“抹去”，使得预测概率为0.</p>
-<p>针对这个缺陷，提出了<strong>拉普拉斯平滑方法</strong>：对先验概率的分子加1，分母加上类别数；对条件概率的分子加1，分母加上对应特征的特征值数量。这样解决了缺陷的同时，也保证了概率值相加之和为1。</p>
-<script type="math/tex; mode=display">
-p(c)=\frac{|D_c|}{|D|}\rightarrow p(c)=\frac{|D_c|+1}{|D|+N}</script><script type="math/tex; mode=display">
-p(x_i|c)=\frac{|D_{x_i|c}|}{|D_c|}\rightarrow p(x_i|c)=\frac{|D_{x_i|c}|+1}{|D_c|+N_i}</script></li>
+<p>针对这个缺陷，提出了<strong>拉普拉斯平滑方法</strong>：对先验概率的分子加1，分母加上类别数；对条件概率的分子加1，分母加上对应特征的特征值数量。这样解决了缺陷的同时，也保证了概率值相加之和为1。<br>$<br>p(c)=\frac{|D_c|}{|D|}\rightarrow p(c)=\frac{|D_c|+1}{|D|+N}<br>$</p>
+<p>$<br>p(x_i|c)=\frac{|D_{x_i|c}|}{|D_c|}\rightarrow p(x_i|c)=\frac{|D_{x_i|c}|+1}{|D_c|+N_i}<br>$</p>
+</li>
 </ul>
 </li>
 <li><p>连续型属性的概率计算</p>
@@ -363,9 +362,8 @@ p(x_i|c)=\frac{|D_{x_i|c}|}{|D_c|}\rightarrow p(x_i|c)=\frac{|D_{x_i|c}|+1}{|D_c
 </li>
 <li><p><strong>通过概率密度函数计算概率</strong></p>
 <p>这种方法首先假设该连续型特征的取值服从某种概率分布，然后利用训练数据进行参数估计以获得分布函数，最后通过概率密度函数计算概率。</p>
-<p>通常情况下，假设数据是服从高斯分布的，即$P(x_i|c)～N(\mu_{c,i},\sigma_{c,i}^2)$，其中$\mu_{c,i}$和$\sigma_{c,i}^2$分别是$c$类样本在第$i$属性上的均值和方差，从而有：</p>
-<script type="math/tex; mode=display">
-P(x_i|c)=\frac{1}{\sqrt{2\pi}\sigma_{c,i}}e^{-\frac{(x-\mu_{c,i})^2}{2\sigma_{c,i}^2}}</script></li>
+<p>通常情况下，假设数据是服从高斯分布的，即$P(x_i|c)～N(\mu_{c,i},\sigma_{c,i}^2)$，其中$\mu_{c,i}$和$\sigma_{c,i}^2$分别是$c$类样本在第$i$属性上的均值和方差，从而有：<br>$<br>P(x_i|c)=\frac{1}{\sqrt{2\pi}\sigma_{c,i}}e^{-\frac{(x-\mu_{c,i})^2}{2\sigma_{c,i}^2}}<br>$</p>
+</li>
 </ul>
 </li>
 </ol>
