@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="Crispin">
 <meta property="og:description" content="Naive Bayes Classification被称作“Naive”的原因：整个形式化过程中只做最原始、最简单的假设。  朴素贝叶斯  优点：在数据较少时仍然有效，可以处理多分类问题  缺点：对于输入数据的构成形式较为敏感  适用数据类型：标称型数据   标称型数据：目标变量只在有限目标集中取值，标称型目标变量主要用于分类 数值型数据：目标变量从无限的数值集合中取值，数值型目标变量主要用于回归">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img2018.cnblogs.com/blog/1539768/201909/1539768-20190911202552405-448666122.png">
-<meta property="og:image" content="https://img2018.cnblogs.com/blog/1539768/201909/1539768-20190911202831831-1555450588.png">
+<meta property="og:image" content="https://crispinli.github.io/2022/07/29/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/完备事件组.png">
+<meta property="og:image" content="https://crispinli.github.io/2022/07/29/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/联合概率.png">
 <meta property="article:published_time" content="2022-07-29T07:09:31.000Z">
-<meta property="article:modified_time" content="2022-07-29T07:35:44.977Z">
+<meta property="article:modified_time" content="2022-07-29T07:38:47.210Z">
 <meta property="article:author" content="crispin">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img2018.cnblogs.com/blog/1539768/201909/1539768-20190911202552405-448666122.png">
+<meta name="twitter:image" content="https://crispinli.github.io/2022/07/29/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/完备事件组.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -346,14 +346,14 @@
 <li><p>联合概率与全概率公式</p>
 <ul>
 <li><p>完备事件组：如果$A_1\cup A_2\cup ···\cup A_n=\Omega$，且$A_i\cap A_j=\Phi$成立，其中$1\leq i\neq j \leq n$，则称$A_1,A_2,···,A_n$为完备事件组</p>
-<p><img src="https://img2018.cnblogs.com/blog/1539768/201909/1539768-20190911202552405-448666122.png" srcset="/img/loading.gif" lazyload alt="1539768-20190911202552405-448666122"></p>
+<p><img src="完备事件组.png" srcset="/img/loading.gif" lazyload alt="完备事件组"></p>
 </li>
 <li><p><strong>先验概率</strong>：通过简单统计分析可以获得的概率，例如$P(A_i)$</p>
 </li>
 <li><p><strong>条件概率</strong>：在事件$A_i$发生的前提下，事件$B$发生的概率，表示为$P(B|A_i)$</p>
 </li>
 <li><p><strong>联合概率</strong>：事件$A_i$和事件$B$同时发生的概率，表示为$P(B,A_i)$，依据条件概率公式有：$P(B,A_i)=P(B|A_i)P(A_i)$</p>
-<p><img src="https://img2018.cnblogs.com/blog/1539768/201909/1539768-20190911202831831-1555450588.png" srcset="/img/loading.gif" lazyload alt="1539768-20190911202831831-1555450588"></p>
+<p><img src="联合概率.png" srcset="/img/loading.gif" lazyload alt="联合概率"></p>
 </li>
 <li><p>由上图及联合概率公式，可以引申出<strong>全概率公式</strong>：$P(B)=\sum_{i=1}^nP(B,A_i)=\sum_{i=1}^nP(B|A_i)P(A_i)$，这个式子也称为事件$B$的全概率公式</p>
 </li>
