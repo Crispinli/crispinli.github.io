@@ -26,7 +26,7 @@
 <meta property="og:image" content="https://crispinli.github.io/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/完备事件组.png">
 <meta property="og:image" content="https://crispinli.github.io/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8/联合概率.png">
 <meta property="article:published_time" content="2022-07-29T07:09:31.000Z">
-<meta property="article:modified_time" content="2022-07-29T08:50:13.346Z">
+<meta property="article:modified_time" content="2022-07-30T03:24:46.868Z">
 <meta property="article:author" content="crispin">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -306,7 +306,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2022年7月29日 下午
+                    本文最后更新于：2022年7月30日 上午
                   
                 
               </p>
@@ -385,7 +385,7 @@
 <p>当某个特征为离散型，先验概率和条件概率都可以通过计算对应的比例获得。</p>
 <p>然而，实际应用中的某个特征可能为连续型，所以应当如何处理连续性特征呢？</p>
 <ul>
-<li><p>通过划分区间的方式离散化</p>
+<li><p><strong>通过划分区间的方式离散化</strong></p>
 <p>这种离散化的方法难以把握划分区间长度。如果划分区间太小，划分后的区间数量就会很多，每一个区间的记录数量很少，可能导致对条件概率误差不可靠；如果划分区间长度太长，就导致部分信息丢失，而且不同类别的记录也有很大可能划分到同一区间，导致分类不准确。</p>
 </li>
 <li><p><strong>通过概率密度函数计算概率</strong></p>
