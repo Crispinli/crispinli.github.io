@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>MySQL常用命(持续更新)</title>
+    <link href="/MySQL%E5%B8%B8%E7%94%A8%E5%91%BD-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <url>/MySQL%E5%B8%B8%E7%94%A8%E5%91%BD-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
+    
+    <content type="html"><![CDATA[<ol><li><p>命令行登录MySQL</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mysql -h ip/hostname -u username -p password -P port<br></code></pre></td></tr></table></figure></li><li><p>查询有多少个数据库</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">show databases;<br></code></pre></td></tr></table></figure></li><li><p>选定某个数据库</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">use dbname;<br></code></pre></td></tr></table></figure></li><li><p>查看某个库中的数据表</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">show tables;<br></code></pre></td></tr></table></figure></li><li><p>查看某个表的属性</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">desc dbname.tablename;<br></code></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术博客</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据库</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>简历模板</title>
     <link href="/%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF/"/>
     <url>/%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF/</url>
